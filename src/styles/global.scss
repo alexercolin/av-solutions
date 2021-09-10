@@ -20,7 +20,19 @@ div#root {
   flex: 1;
   min-height: 100vh;
 }
+h1,
+h2,
+h3 {
+  color: #e2e1e1;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+p {
+  color: #e6d9d8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
 
 body {
-  background: linear-gradient(to bottom right, var(--violet-eggplant) 10%, var(--blue-zodiac) 90%);
+  background: #4c3a3d;
 }
