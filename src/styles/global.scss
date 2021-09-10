@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --blue-zodiac: #0c1242;
+  --violet-eggplant: #8e1073;
+  --shakespeare: #3faacc;
+  --fun-blue: #1c5ab4;
+}
+
+html,
+body,
+div#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--violet-eggplant) 10%, var(--blue-zodiac) 90%);
+}
