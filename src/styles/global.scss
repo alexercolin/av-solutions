@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --blue-zodiac: #0c1242;
+  --violet-eggplant: #8e1073;
+  --shakespeare: #3faacc;
+  --fun-blue: #1c5ab4;
+}
+
+html,
+body,
+div#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3 {
+  color: #e2e1e2;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+p {
+  color: #e6d9d8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  background: rgb(241, 239, 239);
+}
