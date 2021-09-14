@@ -1,9 +1,9 @@
 .container {
-  background-color: #231b1b;
+  background-color: #ff5757;
   border-radius: 5px;
   margin: 20vh auto;
   padding: 2rem;
-  width: 60vw;
+  width: 90vw;
 
   * {
     margin-bottom: 1rem;
@@ -16,5 +16,6 @@
   p {
     text-align: justify;
     line-height: 1.6;
+    font-size: 1.2rem;
   }
 }
