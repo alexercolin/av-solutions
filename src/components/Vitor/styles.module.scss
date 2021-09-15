@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    padding: 0;
+}
+
+.content {
+    padding: 1.5rem;
+    justify-content: space-around;
+    width: 100%;
+
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+.companyImage {
+    width: 25vw;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}

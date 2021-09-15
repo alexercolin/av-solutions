@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import About from "../About/index";
 import React from "react";
 import Alex from "../Alex";
+import Vitor from "../Vitor";
 
 export default function MainContainer() {
   return (
@@ -14,6 +15,9 @@ export default function MainContainer() {
       </div> */}
       <div className={styles.container}>
         <Alex />
+      </div>
+      <div className={styles.container}>
+        <Vitor />
       </div>
     </div>
   );
