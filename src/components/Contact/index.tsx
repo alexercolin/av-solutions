@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+import { api } from "../../services/api";
 import styles from "./styles.module.scss";
 
 export default function Contact() {
@@ -8,12 +9,26 @@ export default function Contact() {
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
 
+  async function handleSubmit(event: FormEvent) {
+    event.preventDefault();
+    if (name && email && telephone && company && message) {
+      api
+        .post("/send-email", { name, email, telephone, company, message })
+        .then((response) => {
+          console.log("deu certo");
+        })
+        .catch(() => {
+          console.log("deu errado");
+        });
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <h2>Manda um salve!</h2>
         <div className={styles.grid}>
-          <form method="post">
+          <form onSubmit={handleSubmit}>
             <p>
               <label htmlFor="name">Name</label>
               <input
@@ -69,7 +84,7 @@ export default function Contact() {
               />
             </p>
             <p>
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </p>
           </form>
         </div>

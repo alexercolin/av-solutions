@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
-import { api } from "../../services/api";
+import { apiGithub } from "../../services/api";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ interface IRepo {
 export default function Vitor() {
   const [repos, setRepos] = useState<IRepo[]>({} as IRepo[]);
   useEffect(() => {
-    api
+    apiGithub
       .get("/ViBrandao/repos")
       .then((response) => {
         console.log(response.data);
