@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import About from "../About";
+import Footer from "../Footer";
 import React from "react";
 import Alex from "../Alex";
 import Vitor from "../Vitor";
@@ -23,6 +24,7 @@ export default function MainContainer() {
       <div className={styles.container}>
         <Contact />
       </div>
+        <Footer />
     </div>
   );
 }
