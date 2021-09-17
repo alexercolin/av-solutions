@@ -1,14 +1,20 @@
 .menu {
+  background-color: #f6f6f6;
+  box-shadow: 1px 1px 10px 1px #0000001f;
+
   padding: 2rem 6rem;
 
   h1 {
-    color: #ff5757;
+    color: var(--tomato);
     font-size: 2rem;
   }
 
   ul {
+    align-items: center;
+    display: flex;
     li {
       list-style: none;
+      margin-right: 1rem;
     }
   }
 }

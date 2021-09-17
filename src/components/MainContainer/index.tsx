@@ -4,27 +4,24 @@ import Footer from "../Footer";
 import React from "react";
 import Alex from "../Alex";
 import Vitor from "../Vitor";
-import Contact from "../Contact";
+import Salve from "../Salve";
 
 export default function MainContainer() {
   return (
     <div>
-      <div className={styles.container}>
+      <div id="about" className={styles.container}>
         <About />
       </div>
-      {/* <div className={styles.container}>
-        <Team />
-      </div> */}
-      <div className={styles.container}>
+      <div id="alex" className={styles.container}>
         <Alex />
       </div>
-      <div className={styles.container}>
+      <div id="vitor" className={styles.container}>
         <Vitor />
       </div>
-      <div className={styles.container}>
-        <Contact />
+      <div id="salve" className={styles.container}>
+        <Salve />
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }

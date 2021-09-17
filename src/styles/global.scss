@@ -6,10 +6,7 @@
 
 :root {
   --white: #ffffff;
-  --blue-zodiac: #0c1242;
-  --violet-eggplant: #8e1073;
-  --shakespeare: #3faacc;
-  --fun-blue: #1c5ab4;
+  --tomato: #ff5757;
 }
 
 html,
@@ -22,7 +19,9 @@ div#root {
 }
 h1,
 h2,
-h3 {
+h3,
+li,
+a {
   color: #e2e1e2;
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -31,6 +30,12 @@ p {
   color: #e6d9d8;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+}
+
+a {
+  color: var(--tomato);
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 body {

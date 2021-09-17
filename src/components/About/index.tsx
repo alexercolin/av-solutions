@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>About</h2>
+        <h2>Sobre</h2>
         <p>
           A AV Solutions, ou melhor dizendo, Alex e Vitor Solutions inicia sua
           jornada em 2021. Nosso objetivo é trazer ao setor de tecnologia
