@@ -32,23 +32,13 @@ export default function Vitor() {
     <div className={styles.container}>
       <div className={styles.content}>
         <p>
-          Sou formado em Análise e Desenvolvimento de Sistema pela Faculdade de
-          Tecnologia de Sorocaba (FATEC). Atualmente sou Desenvolvedor Pleno,
-          com foco em PHP e Javascript. Participo do desenvolvimento de sites,
-          APIs e microserviços. Essas atividades me proporcionam um conhecimento
-          amplo de diversas áreas e me fazem compreender melhor sua integração.
-          Nesse período estou me aprofundando nas tecnologias às quais já estou
-          habituado e adquirindo novos conhecimentos, por exemplo em React e
-          Nest. No meu tempo livre procuro estudar as tecnologias que utilizo no
-          dia a dia e conhecer novas, para me aperfeiçoar e estar pronto para
-          futuras demandas. Tenho grande interesse em aprofundar meus
-          conhecimentos em design patterns, boas práticas e metodologias de
-          desenvolvimento, que possam me ajudar a crescer pessoal e
-          profissionalmente. O que me deixa feliz em trabalhar na área de T.I. é
-          poder participar do desenvolvimento de produtos e serviços que, de
-          alguma forma, facilitem a vida das pessoas. Além disso, trabalhar
-          nessa área faz como que eu esteja constantemente conhecendo pessoas,
-          colaborando e principalmente aprendendo.
+          Formado em Engenharia de Produção pela Faculdade de Engenharia de
+          Sorocaba (FACENS) e certificação Green Belt. Atualmente sou
+          Desenvolvedor Júnior na Empresa Eduzz, com foco em PHP e Javascript.
+          Possuo 5 anos de experiência na indústria passando em empresas como
+          Schaeffler, Hydro e Werkzeugmaschinenlabor. Tech Skills - JavaScript,
+          TypeScript React, Redux, Next.js, PHP, Laravel, Node.js, git, HTML,
+          CSS, SASS, SQL e MongoDB.
         </p>
         <ul>
           {repos.length > 0 &&
