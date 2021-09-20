@@ -28,7 +28,7 @@ export default function Salve() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>Mande um salve por email!</h2>
+        <h2>Manda um salve por email!</h2>
         <div className={styles.grid}>
           <form onSubmit={handleSubmit}>
             <p>
