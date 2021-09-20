@@ -36,8 +36,24 @@ a {
   color: var(--tomato);
   font-size: 1.2rem;
   text-decoration: none;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
 }
 
 body {
   background: rgb(241, 239, 239);
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,9 @@
 .menu {
   background-color: #f6f6f6;
   box-shadow: 1px 1px 10px 1px #0000001f;
-
   padding: 2rem 6rem;
+  position: fixed;
+  width: 100%;
 
   h1 {
     color: var(--tomato);
@@ -13,7 +14,6 @@
     align-items: center;
     display: flex;
     li {
-      list-style: none;
       margin-right: 1rem;
     }
   }
