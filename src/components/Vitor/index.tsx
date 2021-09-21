@@ -29,36 +29,44 @@ export default function Vitor() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <img
+            className={styles.companyImage}
+            src="/images/vitorcanalha.png"
+            alt="Picture to represent the partnership"
+          />
+          <h2>Vitor Brandão</h2>
+        </div>
+
+        <div className={styles.content}>
+          <ul className={styles.hexagonGallery}>
+            {repos.length > 0 &&
+              repos.map((repo, index) => (
+                <li className={styles.hex} key={index}>
+                  <Link href={repo.html_url}>
+                    <a target="_blank">{repo.name}</a>
+                  </Link>
+                </li>
+              ))}
+          </ul>
+          <h2>Projetos no GitHub</h2>
+        </div>
+      </div>
       <div className={styles.content}>
         <p>
           Formado em Engenharia de Produção pela Faculdade de Engenharia de
           Sorocaba (FACENS) e certificação Green Belt. Atualmente sou
           Desenvolvedor Júnior na Empresa Eduzz, com foco em PHP e Javascript.
           Possuo 5 anos de experiência na indústria passando em empresas como
-          Schaeffler, Hydro e Werkzeugmaschinenlabor. Tech Skills - JavaScript,
-          TypeScript React, Redux, Next.js, PHP, Laravel, Node.js, git, HTML,
-          CSS, SASS, SQL e MongoDB.
+          Schaeffler, Hydro e Werkzeugmaschinenlabor.
         </p>
-        <ul>
-          {repos.length > 0 &&
-            repos.map((repo, index) => (
-              <li key={index}>
-                <Link href={repo.html_url}>
-                  <a target="_blank">{repo.name}</a>
-                </Link>
-              </li>
-            ))}
-        </ul>
+        <p>
+          Tech Skills - JavaScript, TypeScript React, Redux, Next.js, PHP,
+          Laravel, Node.js, git, HTML, CSS, SASS, SQL e MongoDB.
+        </p>
       </div>
-      <div className={styles.content}>
-        <img
-          className={styles.companyImage}
-          src="/images/vitor.png"
-          alt="Picture to represent the partnership"
-        />
-        <h2>Vitor Brandão</h2>
-      </div>
-    </div>
+    </>
   );
 }
