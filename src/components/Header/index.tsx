@@ -1,6 +1,9 @@
+import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function Header() {
+  const [activeLink, setActiveLink] = useState(0);
+
   return (
     <nav className={styles.menu}>
       <ul>
@@ -8,19 +11,40 @@ export default function Header() {
           <h1>AV Solutions</h1>
         </li>
         <li>
-          <a href="#about">Sobre</a>
+          <a
+            href="#about"
+            onClick={() => setActiveLink(0)}
+            className={activeLink === 0 ? styles.active : ""}
+          >
+            Sobre
+          </a>
         </li>
         <li>
-          <a href="#alex">Alex</a>
+          <a
+            href="#alex"
+            onClick={() => setActiveLink(1)}
+            className={activeLink === 1 ? styles.active : ""}
+          >
+            Alex
+          </a>
         </li>
         <li>
-          <a href="#vitor">Vitor</a>
+          <a
+            href="#vitor"
+            onClick={() => setActiveLink(2)}
+            className={activeLink === 2 ? styles.active : ""}
+          >
+            Vitor
+          </a>
         </li>
         <li>
-          <a href="#salve">Manda um salve!</a>
-        </li>
-        <li>
-          <a href="#">Blog dos devs</a>
+          <a
+            href="#salve"
+            onClick={() => setActiveLink(3)}
+            className={activeLink === 3 ? styles.active : ""}
+          >
+            Manda um salve!
+          </a>
         </li>
       </ul>
     </nav>
