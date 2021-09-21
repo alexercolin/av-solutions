@@ -4,7 +4,7 @@ import { DiReact } from "react-icons/di";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>AV Solutions - 2021</p>
+      <p>AV Tech - 2021</p>
       <a
         href="https://github.com/alexercolin/av-solutions"
         target="_blank"

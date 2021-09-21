@@ -8,7 +8,7 @@ export default function Header() {
     <nav className={styles.menu}>
       <ul>
         <li>
-          <h1>AV Solutions</h1>
+          <h1>AV Tech</h1>
         </li>
         <li>
           <a

@@ -7,11 +7,11 @@ export default function About() {
       <div className={styles.content}>
         <h2>Sobre</h2>
         <p>
-          A AV Solutions, ou melhor dizendo, Alex e Vitor Solutions inicia sua
-          jornada em 2021. Nosso objetivo é trazer ao setor de tecnologia
-          brasileiro uma nova abordagem meio Z e Millennial, mas fique
-          tranquilo, não vamos te chamar de cringe e nem colocar um tiktok no
-          seu site, só se você quiser.
+          A AV Tech, ou melhor dizendo, Alex e Vitor Tech inicia sua jornada em
+          2021. Nosso objetivo é trazer ao setor de tecnologia brasileiro uma
+          nova abordagem meio Z e Millennial, mas fique tranquilo, não vamos te
+          chamar de cringe e nem colocar um tiktok no seu site, só se você
+          quiser.
         </p>
         <p>
           Queremos unir custo benefício, agilidade, design, boas práticas,
