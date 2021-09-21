@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import ReactWhatsapp from "react-whatsapp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
-export default function Contact() {
+export default function Salve() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [telephone, setTelephone] = useState("");
@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>Mande um salve por email!</h2>
+        <h2>Manda um salve por email!</h2>
         <div className={styles.grid}>
           <form onSubmit={handleSubmit}>
             <p>
@@ -86,12 +86,17 @@ export default function Contact() {
               />
             </p>
             <p>
-              <button className={styles.submitButton} type="submit">Submit</button>
+              <button className={styles.submitButton} type="submit">
+                Submit
+              </button>
             </p>
           </form>
           <h3>Ou pelo WhatsApp</h3>
-          <ReactWhatsapp className={styles.whatsAppButton} number="+55 (15) 99124-6343">
-            <AiOutlineWhatsApp size='50' />
+          <ReactWhatsapp
+            className={styles.whatsAppButton}
+            number="+55 (15) 99124-6343"
+          >
+            <AiOutlineWhatsApp size={35} />
           </ReactWhatsapp>
         </div>
       </div>

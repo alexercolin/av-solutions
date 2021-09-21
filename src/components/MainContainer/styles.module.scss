@@ -1,20 +1,19 @@
 .container {
-  background-color: #ff5757;
-  border-radius: 5px;
-  margin: 2rem 6rem;
-  padding: 2rem;
-
-  * {
-    margin-bottom: 1rem;
-  }
+  background-color: var(--tomato);
+  box-shadow: 1px 1px 10px 1px #0000001f;
+  margin: 4rem 6rem;
+  padding: 6rem 2rem 0 2rem;
 
   h1 {
     font-size: 2rem;
   }
 
   p {
-    text-align: justify;
     line-height: 1.6;
     font-size: 1.2rem;
+  }
+
+  a {
+    color: white;
   }
 }

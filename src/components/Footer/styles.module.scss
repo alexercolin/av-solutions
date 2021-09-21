@@ -1,7 +1,17 @@
 .footer {
+  background-color: #f6f6f6;
+  box-shadow: 1px 1px 10px 1px #0000001f;
   padding: 2rem 6rem;
+  text-align: center;
+  a {
+    align-items: center;
+    display: inline-flex;
+    margin-top: 1rem;
+    text-align: center;
+  }
   p {
     color: black;
+    text-align: center;
   }
 }
 

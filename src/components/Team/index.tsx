@@ -4,7 +4,7 @@ export default function Team() {
       <div>
         <h2>Equipe</h2>
         <p>
-          AV Solutions é uma empresa que foi fundada em 2021 por dois amigos
+          AV Tech é uma empresa que foi fundada em 2021 por dois amigos
           desenvolvedores Alex Ercolin & Vitor Brandão, com o objetivo de criar
           soluções digitais para empresas de diversos ramos.
         </p>
