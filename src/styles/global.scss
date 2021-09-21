@@ -33,6 +33,12 @@ h2 {
 p {
   color: #e6d9d8;
   font-family: "Roboto", sans-serif;
+  transition: filter 0.5s;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  &:hover {
+    filter: brightness(1.5);
+  }
 }
 
 a {
@@ -59,4 +65,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+img {
+  transition: transform 1s;
+  &:hover{
+    transform: translateY(-15px);
+  }
+  box-shadow: 1px 1px 15px 1px #0000001f;
 }
