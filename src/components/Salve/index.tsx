@@ -29,67 +29,55 @@ export default function Salve() {
     <div className={styles.container}>
       <div className={styles.content}>
         <h2>Manda um salve por email!</h2>
-        <div className={styles.grid}>
+        <div className={styles.form}>
           <form onSubmit={handleSubmit}>
-            <p>
-              <label htmlFor="name">Name</label>
               <input
                 required
+                placeholder="Name"
                 id="name"
                 type="text"
                 name="name"
                 value={name}
                 onChange={(event) => setName(event.target.value)}
               />
-            </p>
-            <p>
-              <label htmlFor="email">Email</label>
               <input
                 required
+                placeholder="Email"
                 id="email"
                 type="email"
                 name="email"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
               />
-            </p>
-            <p>
-              <label htmlFor="telephone">Telefone</label>
               <input
                 required
+                placeholder="Telefone"
                 id="telephone"
                 type="tel"
                 name="telephone"
                 value={telephone}
                 onChange={(event) => setTelephone(event.target.value)}
               />
-            </p>
-            <p>
-              <label htmlFor="company">Empresa</label>
               <input
                 required
+                placeholder="Empresa"
                 id="company"
                 type="text"
                 name="company"
                 value={company}
                 onChange={(event) => setCompany(event.target.value)}
               />
-            </p>
-            <p>
-              <label htmlFor="message">Message</label>
               <textarea
                 required
+                placeholder="Message"
                 id="message"
                 name="message"
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
               />
-            </p>
-            <p>
               <button className={styles.submitButton} type="submit">
                 Submit
               </button>
-            </p>
           </form>
           <h3>Ou pelo WhatsApp</h3>
           <ReactWhatsapp
