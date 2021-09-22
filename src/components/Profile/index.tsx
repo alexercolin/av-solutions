@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import ReposHive from "../ReposHive";
+import {AiFillGithub} from "react-icons/ai"
 
 interface IUser {
   name: string;
@@ -38,7 +39,7 @@ export default function Profile({ user }: ProfileProps) {
             </div>
           </div>
           <div className={styles.secondaryContainer}>
-            <h2>Projetos no GitHub</h2>
+            <h2>Projetos no GitHub <AiFillGithub size={35} className={styles.reactIcon} /></h2>
             <h2>{fullName}</h2>
           </div>
         </>
@@ -58,7 +59,7 @@ export default function Profile({ user }: ProfileProps) {
           </div>
           <div className={styles.secondaryContainer}>
             <h2>{fullName}</h2>
-            <h2>Projetos no GitHub</h2>
+            <h2>Projetos no GitHub <AiFillGithub size={35} className={styles.reactIcon} /></h2>
           </div>
         </>
       )}
