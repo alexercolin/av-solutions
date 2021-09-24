@@ -3,6 +3,7 @@ import { api } from "../../services/api";
 import styles from "./styles.module.scss";
 import ReactWhatsapp from "react-whatsapp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaPaperPlane } from "react-icons/fa";
 
 export default function Salve() {
   const [name, setName] = useState("");
@@ -31,53 +32,53 @@ export default function Salve() {
         <h2>Manda um salve por email!</h2>
         <div className={styles.form}>
           <form onSubmit={handleSubmit}>
-              <input
-                required
-                placeholder="Name"
-                id="name"
-                type="text"
-                name="name"
-                value={name}
-                onChange={(event) => setName(event.target.value)}
-              />
-              <input
-                required
-                placeholder="Email"
-                id="email"
-                type="email"
-                name="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-              />
-              <input
-                required
-                placeholder="Telefone"
-                id="telephone"
-                type="tel"
-                name="telephone"
-                value={telephone}
-                onChange={(event) => setTelephone(event.target.value)}
-              />
-              <input
-                required
-                placeholder="Empresa"
-                id="company"
-                type="text"
-                name="company"
-                value={company}
-                onChange={(event) => setCompany(event.target.value)}
-              />
-              <textarea
-                required
-                placeholder="Message"
-                id="message"
-                name="message"
-                value={message}
-                onChange={(event) => setMessage(event.target.value)}
-              />
-              <button className={styles.submitButton} type="submit">
-                Submit
-              </button>
+            <input
+              required
+              placeholder="Name"
+              id="name"
+              type="text"
+              name="name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+            />
+            <input
+              required
+              placeholder="Email"
+              id="email"
+              type="email"
+              name="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+            />
+            <input
+              required
+              placeholder="Telefone"
+              id="telephone"
+              type="tel"
+              name="telephone"
+              value={telephone}
+              onChange={(event) => setTelephone(event.target.value)}
+            />
+            <input
+              required
+              placeholder="Empresa"
+              id="company"
+              type="text"
+              name="company"
+              value={company}
+              onChange={(event) => setCompany(event.target.value)}
+            />
+            <textarea
+              required
+              placeholder="Message"
+              id="message"
+              name="message"
+              value={message}
+              onChange={(event) => setMessage(event.target.value)}
+            />
+            <button className={styles.submitButton} type="submit">
+              Enviar <FaPaperPlane className={styles.airplaneIcon}  />  
+            </button>
           </form>
           <h3>Ou pelo WhatsApp</h3>
           <ReactWhatsapp
@@ -87,6 +88,9 @@ export default function Salve() {
             <AiOutlineWhatsApp size={35} />
           </ReactWhatsapp>
         </div>
+      </div>
+      <div className={`${styles.content} + ${styles.salveImage}`}>
+        <img src="/images/contact-gif.gif"></img>
       </div>
     </div>
   );

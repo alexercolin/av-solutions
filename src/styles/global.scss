@@ -53,6 +53,20 @@ a {
   }
 }
 
+button {
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-color: blueviolet;
+    filter: brightness(0.8);
+    color: #fff;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
 ul {
   li {
     list-style: none;
@@ -69,7 +83,7 @@ html {
 
 img {
   transition: transform 1s;
-  &:hover{
+  &:hover {
     transform: translateY(-15px);
   }
   box-shadow: 1px 1px 15px 1px #0000001f;
