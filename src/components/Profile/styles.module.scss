@@ -1,17 +1,9 @@
 .container {
-  display: flex;
   padding: 0;
 }
 
 .secondaryContainer {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+  display: none;
 }
 
 .reactIcon {
@@ -21,6 +13,7 @@
 
 .content {
   padding: 1.5rem;
+  padding-top: 0;
   justify-content: space-around;
   width: 100%;
 
@@ -28,6 +21,7 @@
     margin-top: 2rem;
     text-align: center;
   }
+
   a {
     font-size: 10px;
     display: block;
@@ -36,8 +30,29 @@
 }
 
 .companyImage {
-  width: 25vw;
+  width: 50vw;
   margin: auto;
   display: block;
   border-radius: 50%;
+}
+
+@media (min-width: 1080px) {
+  .container {
+    display: flex;
+  }
+
+  .secondaryContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .companyImage {
+    width: 25vw;
+  }
 }

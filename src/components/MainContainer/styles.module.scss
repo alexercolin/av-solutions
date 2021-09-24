@@ -1,8 +1,8 @@
 .container {
   background-color: var(--tomato);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.178);
-  margin: 4rem 6rem;
-  padding: 6rem 2rem 0 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.178);
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 
   h1 {
     font-size: 2rem;
@@ -15,5 +15,12 @@
 
   a {
     color: white;
+  }
+}
+
+@media (min-width: 720px) {
+  .container {
+    padding: 6rem 2rem 0 2rem;
+    margin: 4rem 6rem;
   }
 }

@@ -9,6 +9,18 @@
   --tomato: #ff5757;
 }
 
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
 html,
 body,
 div#root {
@@ -28,6 +40,7 @@ a {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -35,7 +48,6 @@ p {
   font-family: "Roboto", sans-serif;
   transition: filter 0.5s;
   letter-spacing: 0.5px;
-  text-align: justify;
   &:hover {
     filter: brightness(1.5);
   }

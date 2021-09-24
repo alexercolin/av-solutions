@@ -1,8 +1,3 @@
-.container {
-  display: flex;
-  padding: 0;
-}
-
 .content {
   padding: 1.5rem;
   width: 100%;
@@ -13,4 +8,11 @@
   margin: auto;
   display: block;
   box-shadow: 1px 1px 15px 1px #0000001f;
+}
+
+@media (min-width: 720px) {
+  .container {
+    display: flex;
+    padding: 0;
+  }
 }

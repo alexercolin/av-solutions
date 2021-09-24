@@ -1,24 +1,48 @@
 .menu {
   background-color: #f6f6f6;
   box-shadow: 1px 1px 10px 1px #0000001f;
-  padding: 2rem 6rem;
+  padding: 1rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 
   h1 {
     color: var(--tomato);
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   ul {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     li {
       margin-right: 1rem;
 
+      a {
+        font-size: 1rem;
+      }
+
       a.active {
         color: blueviolet;
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .menu {
+    padding: 2rem 6rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    ul {
+      justify-content: flex-start;
+      li {
+        a {
+          font-size: 1.2rem;
+        }
       }
     }
   }

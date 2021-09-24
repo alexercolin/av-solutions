@@ -28,13 +28,16 @@ export default function Salve() {
 
   return (
     <div className={styles.container}>
+      <div className={`${styles.content} + ${styles.salveImage}`}>
+        <img src="/images/contact-gif.gif"></img>
+      </div>
       <div className={styles.content}>
         <h2>Manda um salve por email!</h2>
         <div className={styles.form}>
           <form onSubmit={handleSubmit}>
             <input
               required
-              placeholder="Name"
+              placeholder="Nome"
               id="name"
               type="text"
               name="name"
@@ -43,7 +46,7 @@ export default function Salve() {
             />
             <input
               required
-              placeholder="Email"
+              placeholder="E-mail"
               id="email"
               type="email"
               name="email"
@@ -70,27 +73,26 @@ export default function Salve() {
             />
             <textarea
               required
-              placeholder="Message"
+              placeholder="Mensagem"
               id="message"
               name="message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
             <button className={styles.submitButton} type="submit">
-              Enviar <FaPaperPlane className={styles.airplaneIcon}  />  
+              Enviar <FaPaperPlane className={styles.airplaneIcon} />
             </button>
           </form>
-          <h3>Ou pelo WhatsApp</h3>
+        </div>
+        <div className={styles.whatsAppContainer}>
+          <h3>Manda no Whats!</h3>
           <ReactWhatsapp
             className={styles.whatsAppButton}
             number="+55 (15) 99124-6343"
           >
-            <AiOutlineWhatsApp size={35} />
+            <AiOutlineWhatsApp size={25} />
           </ReactWhatsapp>
         </div>
-      </div>
-      <div className={`${styles.content} + ${styles.salveImage}`}>
-        <img src="/images/contact-gif.gif"></img>
       </div>
     </div>
   );
