@@ -9,6 +9,18 @@
   --tomato: #ff5757;
 }
 
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
 html,
 body,
 div#root {
@@ -28,6 +40,7 @@ a {
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -35,7 +48,6 @@ p {
   font-family: "Roboto", sans-serif;
   transition: filter 0.5s;
   letter-spacing: 0.5px;
-  text-align: justify;
   &:hover {
     filter: brightness(1.5);
   }
@@ -50,6 +62,20 @@ a {
 
   &:hover {
     filter: brightness(0.8);
+  }
+}
+
+button {
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-color: blueviolet;
+    filter: brightness(0.8);
+    color: #fff;
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 }
 
@@ -69,7 +95,7 @@ html {
 
 img {
   transition: transform 1s;
-  &:hover{
+  &:hover {
     transform: translateY(-15px);
   }
   box-shadow: 1px 1px 15px 1px #0000001f;

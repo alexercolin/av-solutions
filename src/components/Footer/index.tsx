@@ -13,6 +13,8 @@ export default function Footer() {
         This site was built with Next.js
         <DiReact size={35} className={styles.reactIcon} />
       </a>
+      <p>av.tech.sorocaba@gmail.com</p>
+
     </footer>
   );
 }

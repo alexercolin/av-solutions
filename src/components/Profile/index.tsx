@@ -26,7 +26,7 @@ export default function Profile({ user }: ProfileProps) {
     <>
       {imageOrder === ImagePosition.right ? (
         <>
-          <div className={styles.container}>
+          <div className={`${styles.container} + ${styles.reversedContainer}`}>
             <div className={styles.content}>
               <ReposHive userName={name} />
             </div>
