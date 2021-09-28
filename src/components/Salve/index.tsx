@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import ReactWhatsapp from "react-whatsapp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaPaperPlane } from "react-icons/fa";
+import InputMask from "react-input-mask";
 
 export default function Salve() {
   const [name, setName] = useState("");
@@ -11,6 +12,7 @@ export default function Salve() {
   const [telephone, setTelephone] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
+  const [emailSendStatus, setEmailSendStatus] = useState("");
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
@@ -19,9 +21,13 @@ export default function Salve() {
         .post("/send-email", { name, email, telephone, company, message })
         .then((response) => {
           console.log("deu certo");
+          setEmailSendStatus("Recebemos sua mensagem! 🥳");
         })
         .catch(() => {
           console.log("deu errado");
+          setEmailSendStatus(
+            "Deu ruim ao enviar sua mensagem 😨. Nos envie um email diretamente em av.tech.sorocaba@gmail.com"
+          );
         });
     }
   }
@@ -53,9 +59,10 @@ export default function Salve() {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
-            <input
+            <InputMask
+              mask="(99) 9 9999-9999"
               required
-              placeholder="Telefone"
+              placeholder="Celular"
               id="telephone"
               type="tel"
               name="telephone"
@@ -82,13 +89,14 @@ export default function Salve() {
             <button className={styles.submitButton} type="submit">
               Enviar <FaPaperPlane className={styles.airplaneIcon} />
             </button>
+            <p className={styles.emailStatusMessage}>{emailSendStatus}</p>
           </form>
         </div>
         <div className={styles.whatsAppContainer}>
           <h3>Manda no Whats!</h3>
           <ReactWhatsapp
             className={styles.whatsAppButton}
-            number="+55 (15) 99124-6343"
+            number={process.env.NEXT_PUBLIC_ALEX_PHONE_NUMBER}
           >
             <AiOutlineWhatsApp size={25} />
           </ReactWhatsapp>
