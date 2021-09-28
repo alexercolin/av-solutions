@@ -2,6 +2,11 @@
   padding: 0;
 }
 
+.reversedContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .secondaryContainer {
   display: none;
 }
@@ -39,6 +44,11 @@
 @media (min-width: 1080px) {
   .container {
     display: flex;
+  }
+
+  .reversedContainer {
+    display: flex;
+    flex-direction: row;
   }
 
   .secondaryContainer {

@@ -3,8 +3,13 @@
   display: flex;
   flex-direction: row;
 
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   img {
-    height: 80%;
+    height: 70%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -12,10 +17,7 @@
 }
 
 .salveImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
 .form {
@@ -95,4 +97,13 @@
   width: 100%;
   margin: auto;
   display: block;
+}
+
+@media (min-width: 1080px) {
+  .salveImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

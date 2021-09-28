@@ -42,12 +42,12 @@ export default function MainContainer() {
       <div id="alex" className={styles.container}>
         <Profile user={alex} />
       </div>
-      {/* <div id="vitor" className={styles.container}>
+      <div id="vitor" className={styles.container}>
         <Profile user={vitor} />
-      </div> */}
-      {/* <div id="salve" className={styles.container}>
+      </div>
+      <div id="salve" className={styles.container}>
         <Salve />
-      </div> */}
+      </div>
       <Footer />
     </div>
   );
