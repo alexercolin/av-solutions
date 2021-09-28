@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { NextApiRequest, NextApiResponse } from "next";
-require('dotenv').config()
+require("dotenv").config();
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
@@ -25,9 +25,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       };
       await transporter.sendMail(mailData, function (err: any, info: any) {
         if (err) res.status(400).json({ status: "Erro no envio de email!" });
-        else console.log(info);
+        else {
+          console.log(info);
+          res.status(200).json({ status: "Ok" });
+        }
       });
-      res.status(200).json({ status: "Ok" });
     } catch (e) {
       console.log(e);
     }
