@@ -19,8 +19,9 @@
 .content {
   padding: 1.5rem;
   padding-top: 0;
-  justify-content: space-around;
+  display: flex;
   width: 100%;
+  align-items: center;
 
   h2 {
     margin-top: 2rem;
@@ -63,6 +64,6 @@
   }
 
   .companyImage {
-    width: 25vw;
+    width: 22vw;
   }
 }
