@@ -2,7 +2,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import ReposHive from "../ReposHive";
-import {AiFillGithub} from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai";
+import Head from "next/head";
 
 interface IUser {
   name: string;
@@ -23,7 +24,14 @@ interface ProfileProps {
 export default function Profile({ user }: ProfileProps) {
   const { name, fullName, description, imageOrder } = user;
   return (
-    <>
+    <main>
+      <Head>
+        <title>Empresa AV Tech - Soluções de tecnlogia</title>
+        <meta
+          name="description"
+          content="Perfis dos integrantes sobre a empresa AV Tech"
+        />
+      </Head>
       {imageOrder === ImagePosition.right ? (
         <>
           <div className={`${styles.container} + ${styles.reversedContainer}`}>
@@ -34,12 +42,15 @@ export default function Profile({ user }: ProfileProps) {
               <img
                 className={styles.companyImage}
                 src={`/images/${name}.png`}
-                alt={`Picture of ${name}`}
+                alt="Alex Ercolin"
               />
             </div>
           </div>
           <div className={styles.secondaryContainer}>
-            <h2>Projetos no GitHub <AiFillGithub size={35} className={styles.reactIcon} /></h2>
+            <h2>
+              Projetos no GitHub{" "}
+              <AiFillGithub size={35} className={styles.reactIcon} />
+            </h2>
             <h2>{fullName}</h2>
           </div>
         </>
@@ -50,7 +61,7 @@ export default function Profile({ user }: ProfileProps) {
               <img
                 className={styles.companyImage}
                 src={`/images/${name}.png`}
-                alt={`Picture of ${name}`}
+                alt="Vitor Brandão"
               />
             </div>
             <div className={styles.content}>
@@ -59,13 +70,16 @@ export default function Profile({ user }: ProfileProps) {
           </div>
           <div className={styles.secondaryContainer}>
             <h2>{fullName}</h2>
-            <h2>Projetos no GitHub <AiFillGithub size={35} className={styles.reactIcon} /></h2>
+            <h2>
+              Projetos no GitHub{" "}
+              <AiFillGithub size={35} className={styles.reactIcon} />
+            </h2>
           </div>
         </>
       )}
       <div className={styles.content}>
         <p>{description}</p>
       </div>
-    </>
+    </main>
   );
 }

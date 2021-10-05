@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { apiGithub } from "../../services/api";
 import styles from "./styles.module.scss";
+import Head from "next/head";
 
 interface IOwner {
   login: string;
@@ -31,7 +32,7 @@ export default function ReposHive({ userName }: ProfileProps) {
   }, [userName]);
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <ul className={styles.hexagonGallery}>
         {repos.length > 0 &&
           repos.map((repo, index) => (
@@ -44,6 +45,6 @@ export default function ReposHive({ userName }: ProfileProps) {
             </li>
           ))}
       </ul>
-    </div>
+    </main>
   );
 }
