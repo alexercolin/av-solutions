@@ -12,34 +12,33 @@
 }
 
 .reactIcon {
-  padding: 0;
   margin-left: 0.5rem;
+  padding: 0;
 }
 
 .content {
+  align-items: center;
+  display: flex;
   padding: 1.5rem;
   padding-top: 0;
-  display: flex;
   width: 100%;
-  align-items: center;
 
   h2 {
-    margin-top: 2rem;
     text-align: center;
   }
 
   a {
-    font-size: 10px;
     display: block;
+    font-size: 10px;
     margin: auto;
   }
 }
 
 .companyImage {
-  width: 50vw;
-  margin: auto;
-  display: block;
   border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 50vw;
 }
 
 @media (min-width: 1080px) {
@@ -56,9 +55,10 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
+
     h2 {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: space-around;
     }
   }
