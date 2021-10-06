@@ -5,6 +5,7 @@ import ReactWhatsapp from "react-whatsapp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaPaperPlane } from "react-icons/fa";
 import InputMask from "react-input-mask";
+import Head from "next/head";
 
 export default function Salve() {
   const [name, setName] = useState("");
@@ -33,9 +34,9 @@ export default function Salve() {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={`${styles.content} + ${styles.salveImage}`}>
-        <img src="/images/contact-gif.gif"></img>
+        <img alt="Contato" src="/images/contact-gif.gif"></img>
       </div>
       <div className={styles.content}>
         <h2>Manda um salve por email!</h2>
@@ -102,6 +103,6 @@ export default function Salve() {
           </ReactWhatsapp>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

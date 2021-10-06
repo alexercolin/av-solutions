@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./styles.module.scss";
+import Head from "next/head";
+
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.content}>
         <h2>Sobre</h2>
         <p>
@@ -29,9 +31,9 @@ export default function About() {
         <img
           className={styles.companyImage}
           src="/images/AVSolutions.png"
-          alt="Picture to represent the partnership"
+          alt="partnership"
         />
       </div>
-    </div>
+    </main>
   );
 }

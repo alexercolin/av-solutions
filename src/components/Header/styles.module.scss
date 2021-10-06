@@ -1,29 +1,25 @@
 .menu {
-  background-color: #f6f6f6;
-  box-shadow: 1px 1px 10px 1px #0000001f;
+  background-color: var(--white-smoke);
+  box-shadow: 1px 1px 10px 1px var(--black-shadow);
   padding: 1rem;
   position: fixed;
   width: 100%;
   z-index: 1;
-
   h1 {
     color: var(--tomato);
     font-size: 1rem;
   }
-
   ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
     li {
       margin-right: 1rem;
-
       a {
         font-size: 1rem;
       }
-
       a.active {
-        color: blueviolet;
+        color: var(--blue-violet);
       }
     }
   }

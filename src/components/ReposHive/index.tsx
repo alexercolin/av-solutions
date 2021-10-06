@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import { apiGithub } from "../../services/api";
 import styles from "./styles.module.scss";
-import Link from "next/link";
+import Head from "next/head";
 
 interface IOwner {
   login: string;
@@ -33,17 +32,19 @@ export default function ReposHive({ userName }: ProfileProps) {
   }, [userName]);
 
   return (
-    <div>
+    <main className={styles.container}>
       <ul className={styles.hexagonGallery}>
         {repos.length > 0 &&
           repos.map((repo, index) => (
-            <li className={styles.hex} key={index}>
-              <Link href={repo.html_url}>
-                <a target="_blank">{repo.name}</a>
-              </Link>
+            <li
+              className={styles.hex}
+              key={index}
+              onClick={() => window.open(repo.html_url)}
+            >
+              <span>{repo.name}</span>
             </li>
           ))}
       </ul>
-    </div>
+    </main>
   );
 }
