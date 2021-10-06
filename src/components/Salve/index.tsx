@@ -87,20 +87,19 @@ export default function Salve() {
               onChange={(event) => setMessage(event.target.value)}
             />
             <button className={styles.submitButton} type="submit">
-              Enviar <FaPaperPlane className={styles.airplaneIcon} />
+               <FaPaperPlane className={styles.airplaneIcon} />
             </button>
             <p className={styles.emailStatusMessage}>{emailSendStatus}</p>
           </form>
         </div>
         <div className={styles.whatsAppContainer}>
           <h3>Manda no Whats!</h3>
-          <div className={styles.whatsAppButton}>
-            <ReactWhatsapp
-              number={process.env.NEXT_PUBLIC_ALEX_PHONE_NUMBER as string}
-            >
-              <AiOutlineWhatsApp size={25} />
-            </ReactWhatsapp>
-          </div>
+          <ReactWhatsapp
+            className={styles.whatsAppButton}
+            number={process.env.NEXT_PUBLIC_ALEX_PHONE_NUMBER as string}
+          >
+            <AiOutlineWhatsApp size={25} />
+          </ReactWhatsapp>
         </div>
       </div>
     </main>

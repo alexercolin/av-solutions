@@ -65,7 +65,7 @@
     width: 100%;
   }
 }
-.whatsAppContainer:first-child {
+.whatsAppContainer {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@
 }
 
 .submitButton,
-.whatsAppButton {
+.whatsAppButton{
   background-color: var(--blue-violet);
   border: none;
   border-radius: 0.2em;
