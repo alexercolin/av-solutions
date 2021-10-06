@@ -65,15 +65,20 @@
     width: 100%;
   }
 }
-.whatsAppContainer:first-child {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+.whatsAppContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  margin-top: 2rem;
 }
 
 .submitButton,
-.whatsAppButton {
+.whatsAppButton > :first-child {
   background-color: var(--blue-violet);
   border: none;
   border-radius: 0.2em;
@@ -81,17 +86,8 @@
   display: block;
   font-size: 1em;
   margin-left: auto;
-  margin-top: 2rem;
   padding: 0.8em 1em;
   width: 150px;
-}
-
-.whatsAppButton {
-  margin: 0;
-
-  svg {
-    margin-bottom: 0;
-  }
 }
 
 .airplaneIcon {
