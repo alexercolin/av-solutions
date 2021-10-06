@@ -5,7 +5,6 @@ import ReactWhatsapp from "react-whatsapp";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaPaperPlane } from "react-icons/fa";
 import InputMask from "react-input-mask";
-import Head from "next/head";
 
 export default function Salve() {
   const [name, setName] = useState("");
@@ -95,12 +94,13 @@ export default function Salve() {
         </div>
         <div className={styles.whatsAppContainer}>
           <h3>Manda no Whats!</h3>
-          <ReactWhatsapp
-            className={styles.whatsAppButton}
-            number={process.env.NEXT_PUBLIC_ALEX_PHONE_NUMBER}
-          >
-            <AiOutlineWhatsApp size={25} />
-          </ReactWhatsapp>
+          <div className={styles.whatsAppButton}>
+            <ReactWhatsapp
+              number={process.env.NEXT_PUBLIC_ALEX_PHONE_NUMBER as string}
+            >
+              <AiOutlineWhatsApp size={25} />
+            </ReactWhatsapp>
+          </div>
         </div>
       </div>
     </main>

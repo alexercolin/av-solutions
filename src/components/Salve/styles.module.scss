@@ -65,11 +65,11 @@
     width: 100%;
   }
 }
-.whatsAppContainer {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+.whatsAppContainer:first-child {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 .submitButton,
