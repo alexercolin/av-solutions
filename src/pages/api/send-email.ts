@@ -21,7 +21,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         subject: `Message From ${req.body.name} - ${req.body.company}`,
         text: req.body.message,
         html: `<div>${req.body.message}</div><p>Sent from:
-        ${req.body.email}</p>`,
+        ${req.body.email}.</p><p>Phone number:
+        ${req.body.telephone}.</p>`,
       };
       await transporter.sendMail(mailData, function (err: any, info: any) {
         if (err) res.status(400).json({ status: "Erro no envio de email!" });

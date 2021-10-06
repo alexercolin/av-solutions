@@ -66,6 +66,7 @@
   }
 }
 .whatsAppContainer {
+<<<<<<< HEAD
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -74,6 +75,21 @@
 
 .submitButton,
 .whatsAppButton{
+=======
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  margin-top: 2rem;
+}
+
+.submitButton,
+.whatsAppButton > :first-child {
+>>>>>>> 314afbd6bc11a4362f3a72ff04ea4bab5c9dab37
   background-color: var(--blue-violet);
   border: none;
   border-radius: 0.2em;
@@ -81,17 +97,8 @@
   display: block;
   font-size: 1em;
   margin-left: auto;
-  margin-top: 2rem;
   padding: 0.8em 1em;
   width: 150px;
-}
-
-.whatsAppButton {
-  margin: 0;
-
-  svg {
-    margin-bottom: 0;
-  }
 }
 
 .airplaneIcon {
