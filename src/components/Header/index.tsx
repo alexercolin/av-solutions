@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState(0);
@@ -47,16 +48,20 @@ export default function Header() {
               Manda um salve!
             </a>
           </li>
-          {/* <li>
-            <button
-              onClick={() => {
-                const element = document.body;
-                element.classList.toggle("darkMode");
-              }}
-            >
-              Mudar Tema
-            </button>
-          </li> */}
+          <li className={styles.switchContent}>
+            <FaSun size={20}/>
+            <label className={styles.switch}>
+              <input
+                type="checkbox"
+                onClick={() => {
+                  const element = document.body;
+                  element.classList.toggle("darkMode");
+                }}
+              />
+              <span className={styles.slider}></span>
+            </label>
+            <FaMoon />
+          </li>
         </ul>
       </nav>
     </main>
