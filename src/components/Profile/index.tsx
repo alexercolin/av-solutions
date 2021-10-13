@@ -27,10 +27,7 @@ export default function Profile({ user }: ProfileProps) {
     <main>
       <Head>
         <title>Empresa AV Tech - Soluções de tecnlogia</title>
-        <meta
-          name="description"
-          content="Perfis dos integrantes sobre a empresa AV Tech"
-        />
+        <meta name="description" content="Perfis dos integrantes" />
       </Head>
       {imageOrder === ImagePosition.right ? (
         <>
@@ -71,7 +68,7 @@ export default function Profile({ user }: ProfileProps) {
           <div className={styles.secondaryContainer}>
             <h2>{fullName}</h2>
             <h2>
-              Projetos no GitHub{" "}
+              Projetos no GitHub
               <AiFillGithub size={35} className={styles.reactIcon} />
             </h2>
           </div>
