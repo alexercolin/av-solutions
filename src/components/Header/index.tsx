@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
-import Head from "next/head";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState(0);
@@ -48,6 +47,16 @@ export default function Header() {
               Manda um salve!
             </a>
           </li>
+          {/* <li>
+            <button
+              onClick={() => {
+                const element = document.body;
+                element.classList.toggle("darkMode");
+              }}
+            >
+              Mudar Tema
+            </button>
+          </li> */}
         </ul>
       </nav>
     </main>
