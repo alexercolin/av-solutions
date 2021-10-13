@@ -47,7 +47,7 @@ export default function Header() {
               Manda um salve!
             </a>
           </li>
-          <li>
+          {/* <li>
             <button
               onClick={() => {
                 const element = document.body;
@@ -56,7 +56,7 @@ export default function Header() {
             >
               Mudar Tema
             </button>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </main>
