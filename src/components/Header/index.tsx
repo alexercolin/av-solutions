@@ -49,7 +49,7 @@ export default function Header() {
             </a>
           </li>
           <li className={styles.switchContent}>
-            <FaSun size={20}/>
+            <FaSun size={20} />
             <label className={styles.switch}>
               <input
                 type="checkbox"
